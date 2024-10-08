@@ -4,22 +4,77 @@
 
 @font-face {
     font-family: 'IBM Plex Mono';
-    src: url(C:\Users\sopsi\Desktop\codes\no-focus\fonts\IBMPlexMono-Bold.ttf);
+    src: url(fonts/IBMPlexMono-Bold.ttf);
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'IBM Plex Mono';
-    src: url(C:\Users\sopsi\Desktop\codes\no-focus\fonts\IBMPlexMono-Regular.ttf);
+    src: url(fonts/IBMPlexMono-Regular.ttf);
     font-weight: normal;
 }
 
 
 
+.header {
+    width: 1024px;
+    height: 768px;
+    background-image: url(assets/img/cover-image-dark.svg);
+    background-color: #000028;
+}
+
+.lamp {
+    display: block;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 139%;
+    text-align: center;
+    color: #ff0070;
+    position: absolute;
+    left: 943px;
+    top: 20px;
+    margin: 0;
+}
+
+.lamp::after{
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    position: absolute;
+    top: 8px;
+    left: 43px;
+    border-radius: 100%;
+    background-color: #ff0070;
+    box-shadow: 0 0 4px 2px #ff0070;
+    content: '';
+}
+
+.square-1 {
+    border-bottom: 1px solid #ff0070;
+    border-left: 1px solid #ff0070;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 723px;
+    left: 20px;
+}
+
+.square-2 {
+    border-right: 1px solid #ff0070;
+    border-top: 1px solid #ff0070;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 979px;
+    top: 20px;
+}
+
 .navigation {
     display: flex;
     justify-content: center;
     gap: 10px;
+    padding-top: 20px;
 }
 
 .navigation button {
@@ -31,4 +86,33 @@
 
 .navigation button:hover {
     cursor: pointer;
+    border:  solid #ff0070;
 }
+
+h1 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 157px;
+    line-height: 83%;
+    color: #db00ff;
+    text-shadow: 4px 4px #ff0070
+    
+}
+.title {
+    width: 491px;
+    height: 70px;
+    background: #ff0070;
+    position: flex;
+
+}
+
+.title p {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000028;
+}
+
+
+
