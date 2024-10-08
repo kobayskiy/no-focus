@@ -95,14 +95,19 @@ h1 {
     font-size: 157px;
     line-height: 83%;
     color: #db00ff;
-    text-shadow: 4px 4px #ff0070
+    text-shadow: 4px 4px #ff0070;
+    position: absolute;
+    top: 319px;
+    margin: 0;
     
 }
 .title {
     width: 491px;
     height: 70px;
     background: #ff0070;
-    position: flex;
+    position: absolute;
+    left: 513px;
+    top: 563px;
 
 }
 
@@ -112,6 +117,7 @@ h1 {
     font-size: 18px;
     line-height: 130%;
     color: #000028;
+    margin: 0;
 }
 
 
