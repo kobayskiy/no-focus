@@ -1,5 +1,6 @@
 :root {
     --font-family: "IBM Plex Mono", sans-serif;
+    --color: #ff0070
 }
 
 @font-face {
@@ -38,7 +39,7 @@ body {
     font-size: 18px;
     line-height: 139%;
     text-align: center;
-    color: #ff0070;
+    color: var(--color);
     position: absolute;
     left: 943px;
     top: 20px;
@@ -53,14 +54,14 @@ body {
     top: 8px;
     left: 43px;
     border-radius: 100%;
-    background-color: #ff0070;
-    box-shadow: 0 0 4px 2px #ff0070;
+    background-color: var(--color);
+    box-shadow: 0 0 4px 2px var(--color);
     content: '';
 }
 
 .square-1 {
-    border-bottom: 1px solid #ff0070;
-    border-left: 1px solid #ff0070;
+    border-bottom: 1px solid var(--color);
+    border-left: 1px solid var(--color);
     width: 25px;
     height: 25px;
     position: absolute;
@@ -69,8 +70,8 @@ body {
 }
 
 .square-2 {
-    border-right: 1px solid #ff0070;
-    border-top: 1px solid #ff0070;
+    border-right: 1px solid var(--color);
+    border-top: 1px solid var(--color);
     width: 25px;
     height: 25px;
     position: absolute;
@@ -89,30 +90,31 @@ body {
     border: none;
     background-color: transparent;
     padding: 0px 13px;
-    color: #FF0070;
+    color: var(--color);
 }
 
 .navigation button:hover {
     cursor: pointer;
-    border:  solid #ff0070;
+    border:  solid var(--color);
 }
 
-h1 {
+.h1-header {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 157px;
     line-height: 83%;
     color: #db00ff;
-    text-shadow: 4px 4px #ff0070;
+    text-shadow: 4px 4px var(--color);
     position: absolute;
     top: 319px;
     margin: 0;
     
 }
+
 .title {
     width: 491px;
     height: 70px;
-    background: #ff0070;
+    background: var(--color);
     position: absolute;
     left: 513px;
     top: 563px;
@@ -132,10 +134,14 @@ main {
     width: 1024px;
     height: 3352px;
     background-color: #000028;
+} 
+
+.section {
+    box-sizing: border-box;
+    padding: 0 20px;
 }
 
 .section-1 {
-    padding: 0;
     width: 1024px;
     margin-top: 60px;
     display: flex;
@@ -154,13 +160,30 @@ main {
     font-weight: 700;
     font-size: 18px;
     line-height: 130%;
-    color: #ff0070;
+    color: var(--color);
+}
+
+a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #f1b2ce;
+    text-shadow: 2px 2px var(--color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    border: solid #f1b2ce;
 }
 
 .mainblock-big {
     width: 649px;
     height: 23px;
-    background-color: #ff0070;
+    background-color: var(--color);
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
@@ -184,7 +207,6 @@ main {
     justify-content: flex-start;
     flex-direction: column;
     gap: 0px;
-    padding: 0 20px;
 }
 
 .wrapper-2 {
@@ -199,7 +221,7 @@ main {
 .mainblock-small {
     width: 315px;
     height: 23px;
-    background-color: #ff0070;
+    background-color: var(--color);
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
@@ -208,7 +230,6 @@ main {
 }
 
 .section-3 {
-    padding: 0 20px;
     width: 1024px;
     margin-top: 80px;
     display: flex;
@@ -224,7 +245,7 @@ main {
 .mainblock-big-regular {
     width: 649px;
     height: 23px;
-    background-color: #ff0070;
+    background-color: var(--color);
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
@@ -233,16 +254,15 @@ main {
 }
 
 .gallery {
-    padding: 0 20px;
     margin-top: 80px;
     width: 1024px;
     height: 1091px;
 
 }
 .mainblock-gallery {
-    width: 1024px;
+    width: 984px;
     height: 23px;
-    background-color: #ff0070;
+    background-color: var(--color);
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
@@ -258,11 +278,11 @@ main {
     grid-area: img2;
 }
 
-.img-3 {
+.img-4 {
     grid-area: img4;
 }
 
-.img-4 {
+.img-3 {
     grid-area: img3;
 }
 
@@ -283,6 +303,26 @@ main {
         'img3 img4 img2'
         'img3 img5 img5';
     gap: 25px;
+}
+
+.footer {
+  width: 1024px;
+  height: 768px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.h1-footer {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 157px;
+    line-height: 83%;
+    color: #db00ff;
+    text-shadow: 2px 2px var(--color);
+    margin: 0;
+    position: absolute;
+    top: 319px;
+    left: 277px;
 }
 
 
