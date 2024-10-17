@@ -59,12 +59,15 @@ body {
     content: '';
 }
 
-.square-1 {
-    border-bottom: 1px solid var(--color);
-    border-left: 1px solid var(--color);
+.sqr {
     width: 25px;
     height: 25px;
     position: absolute;
+}
+
+.square-1 {
+    border-bottom: 1px solid var(--color);
+    border-left: 1px solid var(--color);
     top: 723px;
     left: 20px;
 }
@@ -72,9 +75,6 @@ body {
 .square-2 {
     border-right: 1px solid var(--color);
     border-top: 1px solid var(--color);
-    width: 25px;
-    height: 25px;
-    position: absolute;
     left: 979px;
     top: 20px;
 }
@@ -87,6 +87,7 @@ body {
 }
 
 .navigation button {
+    font-family: var(--font-family);
     border: none;
     background-color: transparent;
     padding: 0 13px;
@@ -97,6 +98,10 @@ body {
 .navigation button:hover {
     cursor: pointer;
     border:  solid var(--color);
+}
+
+.activebutton {
+    border: 1px solid var(--color) !important;
 }
 
 .h1-header {
@@ -136,10 +141,10 @@ main {
 .section {
     box-sizing: border-box;
     padding: 0 20px;
+    width: 1024px;
 }
 
 .section-1 {
-    width: 1024px;
     height: 508px;
     margin-top: 60px;
     margin-bottom: 80px;
@@ -211,7 +216,6 @@ a:focus {
 
 .section-2 {
     height: 498px;
-    width: 1024px;
     display: flex;
     margin-bottom: 80px;
     justify-content: flex-start;
@@ -239,7 +243,6 @@ a:focus {
 }
 
 .section-3 {
-    width: 1024px;
     margin-bottom: 80px;
     display: flex;
     gap: 20px;
@@ -326,6 +329,3 @@ a:focus {
     top: 319px;
     left: 277px;
 }
-
-
-
